@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>เสี่ยงซิมซี สุ่มรางวัล</title>
+  <title>เสี่ยงเซียมซี สุ่มรางวัล</title>
   <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
   <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -352,8 +352,8 @@
 
             <header style={{ textAlign:"center", marginBottom:28 }}>
               <div style={{ fontSize:11, letterSpacing:10, color:"rgba(212,175,55,.48)" }}>✦ ✦ ✦ ✦ ✦</div>
-              <h1 className="gold-glow" style={{ fontSize:34, fontWeight:900, color:"#D4AF37", letterSpacing:6, margin:"8px 0 4px" }}>เสี่ยงซิมซี</h1>
-              <p style={{ fontSize:13, color:"rgba(255,228,181,.52)", letterSpacing:4 }}>เสี่ยงซิมซีสุ่มรางวัล</p>
+              <h1 className="gold-glow" style={{ fontSize:34, fontWeight:900, color:"#D4AF37", letterSpacing:6, margin:"8px 0 4px" }}>เสี่ยงเซียมซี</h1>
+              <p style={{ fontSize:13, color:"rgba(255,228,181,.52)", letterSpacing:4 }}>เสี่ยงเซียมซีสุ่มรางวัล</p>
               <div style={{ fontSize:11, letterSpacing:10, color:"rgba(212,175,55,.48)", marginTop:6 }}>✦ ✦ ✦ ✦ ✦</div>
             </header>
 
@@ -414,7 +414,7 @@
                 <div style={{ position:"absolute", inset:0, zIndex:10, display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"center", gap:10 }}>
                   <ResultStick value={lastDrawn} animKey={animKey} />
                   <div className="res-reveal" style={{ textAlign:"center" }}>
-                    <div style={{ fontSize:10, color:"rgba(212,175,55,.65)", letterSpacing:3, marginBottom:4 }}>✦ ผลการเสี่ยงซิมซี ✦</div>
+                    <div style={{ fontSize:10, color:"rgba(212,175,55,.65)", letterSpacing:3, marginBottom:4 }}>✦ ผลการเสี่ยงเซียมซี ✦</div>
                     <div style={{ fontSize:36, fontWeight:900, color:"#FFD700", textShadow:"0 0 26px rgba(212,175,55,.65)", letterSpacing:4 }}>{lastDrawn}</div>
                   </div>
                 </div>
@@ -439,7 +439,7 @@
 
             <div style={{ display:"flex", justifyContent:"center", gap:12, marginBottom:28, flexWrap:"wrap" }}>
               {phase === "idle" && (
-                <button className="btn-main" onClick={handleFirstDraw} disabled={!canInitDraw}>⊙ เสี่ยงซิมซี</button>
+                <button className="btn-main" onClick={handleFirstDraw} disabled={!canInitDraw}>⊙ เสี่ยงเซียมซี</button>
               )}
               {phase === "shaking" && (
                 <button className="btn-main" disabled>⊙ กำลังสุ่ม...</button>
@@ -486,6 +486,10 @@
                 <div style={{ padding:"16px", textAlign:"center", fontSize:13, color:"rgba(255,228,181,.22)" }}>ยังไม่มีประวัติ</div>
               )}
             </div>
+
+          <div style={{ textAlign:"center", marginTop:28, paddingBottom:4, fontSize:11, color:"rgba(255,228,181,.18)", letterSpacing:1, lineHeight:1.8 }}>
+            Copyright © 2026 by KANOKPALM [Made by Claude]
+          </div>
 
           </div>
         </>
